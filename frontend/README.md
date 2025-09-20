@@ -60,6 +60,37 @@ If your backend runs elsewhere, update the base URL inside: frontend/api.js
 ```yaml
 Simply open the following file in your browser: frontend/login.html
 
+From there:
+1. Register a new account  
+2. Log in  
+3. Access the dashboard  
+4. Upload documents → Summarize → Generate quizzes → Download  
+5. Manage account via Settings page  
+
 ```
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the UI are stored in the `docs/` folder.  
+
+Example:  
+![Login Page](../docs/login.png)  
+![Dashboard](../docs/dashboard.png)  
+![Notes Page](../docs/notes.png)  
+![Quiz Example](../docs/quiz.png)  
+![Settings Page](../docs/settings.png)  
+
+---
+
+## 📝 Notes
+
+- MVP frontend is **static HTML/JS**.  
+- For scaling to mobile/web apps, this can later be migrated to **React** or **React Native**.  
+
+
+```
+
 
 
