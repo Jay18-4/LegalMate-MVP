@@ -69,6 +69,8 @@ Screenshots and demo video are stored in the docs/ folder.
 
 ---
 
-##📜 License
+## 📜 License
+
 This is a closed MVP project.
 It is not open source and not licensed for commercial use.
+
