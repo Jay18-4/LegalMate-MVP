@@ -65,7 +65,7 @@ From there, you can:
 
 ## 📸 Screenshots
 
-Screenshots and demo video are stored in the docs/ folder.
+Screenshots and demo video are stored in the `docs/` folder.
 
 ---
 
@@ -73,4 +73,5 @@ Screenshots and demo video are stored in the docs/ folder.
 
 This is a closed MVP project.
 It is not open source and not licensed for commercial use.
+
 
