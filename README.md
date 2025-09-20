@@ -61,6 +61,14 @@ From there, you can:
 - Summarize or generate quizzes
 - Download results as PDF
 
-### 📸 Screenshots
+---
+
+## 📸 Screenshots
 
 Screenshots and demo video are stored in the docs/ folder.
+
+---
+
+##📜 License
+This is a closed MVP project.
+It is not open source and not licensed for commercial use.
