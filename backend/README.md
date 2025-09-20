@@ -11,7 +11,7 @@ Handles:
 
 ---
 
-## 🛠️ Setup & Run
+## 🛠️ Setup & Run/Testing
 
 ### 1. Create a virtual environment
 ```bash
@@ -49,18 +49,29 @@ GOOGLE_API_KEY=your_google_api_key_here
 
 ## 📘 API Endpoints (MVP)
 ### 🔑 Authentication
-```yaml
-POST /register → Register new user
-POST /login → Login and get JWT token
-GET /user → Get details of the currently authenticated user
-```
-### 📂 Documents
-- POST /upload_doc → Upload a legal document
-- GET /user_docs → Get all documents belonging to the logged-in user
-- GET /doc/{doc_id} → Get a specific document (by ID)
-- GET /download/{doc_id} → Download a document
-- DELETE /delete_doc/{doc_id} → Delete one of the user’s documents
+- POST /register → Register new user
+- POST /login → Login and get JWT token
+- GET /user → Get details of the currently authenticated user
 
-###✍️ AI Features
+### 📂 Documents
+- POST /upload_file → Upload a legal document
+- GET /user_note → Get all documents belonging to the logged-in user
+- GET /doc/{note_id} → Get a specific document (by ID)
+- GET /download/{note_id} → Download a document
+- DELETE /delete_doc/{note_id} → Delete one of the user’s documents
+
+### ✍️ AI Features
 - POST /summarize/{doc_id} → Summarize a document
 - POST /quiz/{doc_id} → Generate deposition-style quiz from a document
+
+### 👩‍💻 Admin / Dev-Only
+
+- GET /all_users → List all registered users
+
+- GET /all_notes → List all uploaded notes (all users)
+
+- GET /all_users_notes → Retrieve all notes grouped by users
+
+- DELETE /delete_user/{user_id} → Delete a specific user
+
+- (Commented out: delete all users / delete all notes — kept only for dev testing)
