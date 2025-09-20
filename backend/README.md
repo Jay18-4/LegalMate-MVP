@@ -67,11 +67,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 ### 👩‍💻 Admin / Dev-Only
 
 - GET /all_users → List all registered users
-
 - GET /all_notes → List all uploaded notes (all users)
-
 - GET /all_users_notes → Retrieve all notes grouped by users
-
 - DELETE /delete_user/{user_id} → Delete a specific user
-
 - (Commented out: delete all users / delete all notes — kept only for dev testing)
