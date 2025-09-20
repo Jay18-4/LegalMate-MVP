@@ -61,13 +61,6 @@ From there, you can:
 - Summarize or generate quizzes
 - Download results as PDF
 
-Register
+### 📸 Screenshots
 
-Login
-
-Upload legal documents
-
-Summarize or generate quizzes
-
-Download results as PDF
-
+Screenshots and demo video are stored in the docs/ folder.
