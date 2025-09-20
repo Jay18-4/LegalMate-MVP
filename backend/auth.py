@@ -17,7 +17,7 @@ router = APIRouter(
     tags = ['auth']
 )
 
-SECRET_KEY = 'jsj3j9fe97fejf3wieuf78w4u4ht83yeqdjwqir3t2f0lvr,b//../,.;l;s'
+SECRET_KEY = YOUR_SECRET_KEY
 ALGORITHM ='HS256'
 
 bcrypt_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
@@ -99,6 +99,7 @@ async def get_current_user(token: Annotated[str, Depends(oayth2_bearer)]):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
                             detail='User not validated.')
     
+
 
 
 
