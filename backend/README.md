@@ -36,3 +36,23 @@ uvicorn server:app --reload
 #### Swagger API docs:
 👉 http://127.0.0.1:8000/docs
 
+### 🔑 Environment Variables
+
+Create a .env file inside /backend/:
+```ini
+SECRET_KEY=your_secret_key_here
+ALGORITHM=HS256
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+---
+
+## 📘 API Endpoints (MVP)
+### 🔑 Authentication
+```yaml
+POST /register → Register new user
+
+POST /login → Login and get JWT token
+
+GET /user → Get details of the currently authenticated user
+```
