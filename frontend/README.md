@@ -76,7 +76,7 @@ From there:
 Screenshots of the UI are stored in the `docs/` folder.  
 
 Example:  
-![Login Page](../docs/login.png)  
+![Login Page](../docs/screenshorts/Login.html.png)  
 ![Dashboard](../docs/dashboard.png)  
 ![Notes Page](../docs/notes.png)  
 ![Quiz Example](../docs/quiz.png)  
@@ -90,7 +90,6 @@ Example:
 - For scaling to mobile/web apps, this can later be migrated to **React** or **React Native**.  
 
 
-```
 
 
 
