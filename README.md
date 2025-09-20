@@ -68,17 +68,18 @@ From there, you can:
 Screenshots and demo video are stored in the `docs/` folder.
 
 Example:
-
 ![Login Page](../docs/screenshorts/Login.html.png)  
 ![Dashboard](../docs/screenshorts/Dashboard.html.png)  
 ![Notes Page](../docs/screenshorts/Notes.html.png)  
 ![Quiz Example](../docs/screenshorts/Quiz.html.png)  
+
 ---
 
 ## 📜 License
 
 This is a closed MVP project.
 It is not open source and not licensed for commercial use.
+
 
 
 
