@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegalMate — Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/frontend/static/color.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/Pop-Up_Settings.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/dashboardstyle.css" />
+  </head>
+  <body class="dashboard">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <h1 class="brand">LegalMate</h1>
+
+        <form class="search" role="search" aria-label="Search notes">
+          <label class="sr-only" for="q">Search notes</label>
+          <input id="q" class="searchbar" name="q" placeholder="Search Document..." />
+          <button type="button" class="search-icon" aria-label="Open search">
+            <img
+              src="/frontend/icons/search_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              width="50"
+              height="30"
+              class="nav-btn--image"
+            />
+          </button>
+        </form>
+
+        <nav class="nav" role="navigation" aria-label="Top navigation">
+          <a href="#" class="nav__link">Documents</a>
+          <button class="setting-btn" type="button" aria-haspopup="dialog" aria-controls="settingBanner" aria-expanded="false" id="settings-toggle">
+            <img
+              src="/frontend/icons/settings_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              width="60"
+              height="30"
+              class="setting-btn--image"
+              id="setting-icon"
+            />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="dashboard-section">
+      <aside class="sidebar" id="sidebar" aria-label="Primary">
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="sidebar-links">☰</button>
+
+        <nav class="left-nav" id="sidebar-links" role="navigation" aria-label="Sidebar links">
+          <a class="active-page" href="#">
+            <img
+              src="/frontend/icons/library_books_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Documents
+          </a>
+
+          <a href="#">
+            <img
+              src="/frontend/icons/summarize_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Summaries
+          </a>
+
+          <a href="#">
+            <img
+              src="/frontend/icons/quiz_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Quizzes
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main-container" role="main" aria-label="Main content">
+        <section class="chips" aria-label="Filters">
+          <button class="chip is-selected">All</button>
+          <button class="chip">Biology</button>
+          <button class="chip">Chemistry</button>
+          <button class="chip">Math</button>
+          <button class="chip">Pinned</button>
+        </section>
+
+        <section id="noteList" class="note_container" aria-label="Notes list">
+          <!-- NOTE: keep id if your backend expects it, but repeated ids are invalid HTML.
+               Consider rendering one template with id and using class for repeats. -->
+          <article id="noteItem" class="note-item" role="article" aria-label="Note">
+            <h3>${note.title}</h3>
+            <div class="note_container-div" aria-hidden="true">
+              <footer class="btn-container">
+                <button class="note_container-btn note_container-btn--ghost summarize-btn" type="button">Summarize</button>
+                <button class="note_container-btn note_container-btn--ghost quiz-btn" type="button">Quiz</button>
+              </footer>
+            </div>
+          </article>
+        </section>
+
+        <!-- Upload row -->
+        <section class="toolbar" aria-label="Upload">
+          <form class="upload" onsubmit="return false" aria-label="Upload a note">
+            <label for="fileInput" class="upload__label sr-only">Upload a note</label>
+            <input type="file" id="fileInput" name="fileInput" accept=".txt,.pdf,.docx" required class="sr-only" />
+            <button id="uploadNotesBtn" type="button" class="note_container-btn note_container-btn-upload note_container-btn--ghost" aria-label="Upload note">+</button>
+          </form>
+        </section>
+      </main>
+
+      <!-- Settings -->
+      <div id="settingBanner" class="setting_body" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="setting_container" role="document">
+          <img src="/frontend/icons/account_circle_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            width="100"
+            height="100"
+            class="profile-icon"
+          >
+          <div class="switch-div">
+            <em class="switch-label">Dark Mode</em>
+            <label class="switch" for="checkbox">
+              <input id="checkbox" type="checkbox" aria-label="Toggle dark mode">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <button class="logout-btn settings-container-btn settings_container-btn--ghost" type="button">Logout</button>
+          <a class="seting-link" href="settings.html"><button class="settings-container-btn settings_container-btn--ghost" type="button">Settings</button><a href="settings.html"></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="errorBanner" class="error-banner" role="alert" aria-hidden="true">
+        <div id="errorMessage"></div>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <small>© 2025 LegalMate • Built for students</small>
+      </div>
+    </footer>
+
+    <script src="/frontend/static/api.js"></script>
+    <script src="/frontend/static/app.js"></script>
+  </body>
+</html>

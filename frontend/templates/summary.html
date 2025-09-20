@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/color.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/note_style.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/Pop-Up_Settings.css" />
+    <title>Document</title>
+  </head>
+  <body class="dashboard">
+    <header class="site-header">
+      <div class="note_header-inner">
+        <h1 class="page">LegalMate</h1>
+        <section class="header-icons">
+          <button class="note_btn-menu-toggle" id="btn_menu-toggle">☰</button>
+          <menu id="btnMenu" class="note-btn_menue">
+            <button id="shortSummerizeNoteBtn" type="button" class="note_container-btn note_container-btn--ghost">
+             Generate Summery
+            </button>
+            <form id="quizForm">
+              <button id="generateQuizBtn" type="submit" class="note_container-btn note_container-btn--ghost">Generate Quiz</button>
+            </form>
+            <div id="summaryBtnContainer">
+              <button id="summaryDownload" type="button" class="note_container-btn note_container-btn--ghost">Download Summary</button>
+            </div>
+            <button id="deleteNoteBtn" class="note_button-secondary">Delete</button>
+          </menu>
+          <button class="setting-btn" type="button">
+            <img
+              src="/frontend/icons/settings_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="60"
+              height="30"
+              class="setting-btn--image"
+              id="setting-icon"
+            />
+           </button>
+        </section>
+
+         
+        
+      </div>
+    
+    </header>
+    <section class="note-section">
+      
+      <aside class="note-sidebar" id="sidebar">
+        <button class="note_menu-toggle" id="menu-toggle">☰</button>
+        <!-- <h2>Notes</h2> -->
+        <nav class="note_left-nav" id="sidebar-links">
+        <a href="dashboard.html">
+          <img
+              src="/frontend/icons/home_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+          Home</a>       
+          <a href="notes.html">
+            <img
+              src="/frontend/icons/library_books_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Document</a>
+          <a href="quiz.html">
+            <img
+              src="/frontend/icons/quiz_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Quiz</a>
+        </nav>
+      </aside>
+
+      <main class="note-detail-container">
+        <div class="note-header">
+          <h1 id="summaryTitle" class="notes notesDisplay"><u></u>Summary</u></h1>
+          
+        </div>
+        <article id="summaryContent" class="note-content"></article>
+        
+        
+        <div id="summaryDate" class="note-date">Created on: September 30, 2025</div>
+      </main>
+      <!-- Settings -->
+       <div id="settingBanner" class="setting_body">
+            <div class="setting_container">
+              <img src="/frontend//icons/account_circle_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg" 
+              alt="Description of image"
+              width="100"
+              height="100"
+              class="profile-icon"
+              >
+            <div class="switch-div">
+              <em class="switch-label">Dark Mode</em>
+              <label class="switch" for="checkbox">
+                <input id="checkbox" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            </div>
+            <button class="logout-btn settings-container-btn settings_container-btn--ghost" type="button">Logout</button>
+            <a class="seting-link" href="settings.html"><button class="settings-container-btn settings_container-btn--ghost" type="button">Settings</button><a href="settings.html"></a>
+          </div>
+       </div>
+    </section>
+    
+    
+
+    <div id="errorBanner" class="error-banner">
+      <div id ="errorMessage">
+      </div> 
+    </div>
+    
+    <div id="result"></div>
+
+    <footer class="site-footer">
+    <div class="container">
+        <small>© 2025 LegalMate • Built for students</small>
+    </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/frontend/static/api.js"></script>
+    <script src="/frontend/static/app.js"></script>
+  </body>
+</html>

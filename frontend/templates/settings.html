@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/color.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/settings.css" />
+    <title>Settings</title>
+  </head>
+
+  <body class="setting_body">
+    <div class="setting_section">  
+    <aside class="note-sidebar" id="sidebar">
+        <button class="note_menu-toggle" id="menu-toggle">☰</button>
+        <!-- <h2>Notes</h2> -->
+        <nav class="note_left-nav" id="sidebar-links">
+        <a href="dashboard.html">
+          <img
+              src="/frontend/icons/home_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+          Home</a>
+          <a href="notes.html">
+            <img
+              src="/frontend/icons/library_books_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Note</a>
+          <a href="summary.html">
+            <img
+              src="/frontend/icons/summarize_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Summary</a>
+          <a href="quiz.html">
+            <img
+              src="/frontend/icons/quiz_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Description of image"
+              width="50"
+              height="30"
+              class="left-nav-icon"
+            />
+            Quiz</a>
+        </nav>
+      </aside>
+    <div class="setting_container">
+        <img src="/frontend//icons/account_circle_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg" 
+        alt="Description of image"
+        width="100"
+        height="100"
+        class="profile-icon"
+        >
+      <div class="switch-div">
+        <em class="switch-label">Dark Mode</em>
+        <label class="switch" for="checkbox">
+          <input id="checkbox" type="checkbox">
+          <span class="slider round"></span>
+      </label>
+      </div>
+      
+      <button class="logout-btn note_container-btn note_container-btn--ghost" type="button">Logout</button>
+      <button id="delete-user-btn" class="note_container-btn note_container-btn--ghost note_button-secondary" type="button">Delete Account</button>
+
+      <footer>
+      </footer>
+    </div>
+    </div>  
+    <div id="errorBanner" class="error-banner">
+      <div id ="errorMessage">
+      </div> 
+    </div>
+    <footer class="site-footer">
+    <div class="container">
+      <small>© 2025   LegalMate • Built for students</small>
+      
+    </div>
+    </footer>
+    
+    <div id="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/frontend/static/api.js" defer></script>
+    <script src="/frontend/static/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/login_style.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/static/color.css" />
+    <title>Login</title>
+  </head>
+
+  <body class="login_body">
+    <div class="login_container">
+      <form id="loginForm" name="formLogin" class="form">
+        <h1 class="form_header">Login</h1>
+        <input
+          type="text"
+          id="loginUsername"
+          name="loginUsername"
+          required
+          placeholder="Username"
+          class="username"
+          autofocus
+        />
+        <br />
+        <br />
+        <input
+          type="password"
+          id="loginPassword"
+          name="loginPassword"
+          required
+          placeholder="Password"
+          class="username"
+        />
+        <br />
+        <br />
+        <button id="loginBtn" type="submit" class="form_button">Login</button>
+        <br />
+        <br>
+        <div class="divider">
+          <span>or</span>
+        </div>
+        <button class="google_facebook_btn">
+          <img
+            src="/frontend/icons/icons8-google.svg"
+            alt="Description of image"
+            width="50"
+            height="30"
+          />
+          <!-- IF GOING GLOBAL USE THIS LINK WHEN USING ICON 
+          <a target="_blank" href="https://icons8.com/icon/V5cGWnc9R4xj/google">
+          Google</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+        </button>
+        <button class="google_facebook_btn">
+          <!-- ?<a target="_blank" href="https://icons8.com/icon/118497/facebook">
+          Facebook Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  -->
+          <img
+            src="/frontend/icons/icons8-facebook-logo.svg"
+            alt="Description of image"
+            width="50"
+            height="30"
+          />
+        </button>
+        </form>
+      <footer class="login-footer">
+      <p>Don't have an account? <a href="register.html" class="footer-link">Register here</a></p>
+      </footer>
+    </div>
+    <div class="switch-div">
+        <em class="switch-label">Dark Mode</em>
+        <label class="switch" for="checkbox">
+          <input id="checkbox" type="checkbox">
+          <span class="slider round"></span>
+      </label>
+      </div>
+    <div id="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/frontend/static/api.js" defer></script>
+    <script src="/frontend/static/app.js" defer></script>
+  </body>
+</html>
