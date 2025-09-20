@@ -51,9 +51,9 @@ http://127.0.0.1:8000
 
 ```mathematica
 
-If your backend runs elsewhere, update the base URL inside:
-```
+If your backend runs elsewhere, update the base URL inside: 
 frontend/api.js
+```
 
 ```yaml
 
@@ -64,3 +64,4 @@ frontend/api.js
 Simply open the following file in your browser:
 
 ```
+
