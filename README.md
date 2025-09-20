@@ -18,14 +18,13 @@ Built with **FastAPI (backend)** and **HTML/CSS/JS (frontend)**.
 ---
 
 ## 📂 Project Structure
+```yaml
 LegalMate_App/
 │── backend/ # FastAPI backend (auth, docs, AI endpoints)
 │── frontend/ # HTML/CSS/JS frontend
 │── docs/ # Screenshots & demo video
 │── README.md # Main project readme
-
----
-
+```
 
 ---
 
@@ -54,3 +53,21 @@ Swagger docs:
 
 ### Frontend
 Open:
+frontend/login.html
+From there, you can:
+- Register
+- Login
+- Upload legal documents
+- Summarize or generate quizzes
+- Download results as PDF
+
+Register
+
+Login
+
+Upload legal documents
+
+Summarize or generate quizzes
+
+Download results as PDF
+
