@@ -1,0 +1,1 @@
+# LegalMate-MVP
