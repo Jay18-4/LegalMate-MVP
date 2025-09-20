@@ -51,8 +51,14 @@ GOOGLE_API_KEY=your_google_api_key_here
 ### 🔑 Authentication
 ```yaml
 POST /register → Register new user
-
 POST /login → Login and get JWT token
-
 GET /user → Get details of the currently authenticated user
 ```
+### 📂 Documents
+
+POST /upload_doc → Upload a legal document
+
+GET /user_docs → Get all documents belonging to the logged-in user
+GET /doc/{doc_id} → Get a specific document (by ID)
+GET /download/{doc_id} → Download a document
+DELETE /delete_doc/{doc_id} → Delete one of the user’s documents
