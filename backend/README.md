@@ -30,8 +30,9 @@ pip install -r requirements.txt
 ```bash
 uvicorn server:app --reload
 ```
-### Backend will be live at:
+#### Backend will be live at:
 👉 http://127.0.0.1:8000
 
-Swagger API docs:
+#### Swagger API docs:
 👉 http://127.0.0.1:8000/docs
+
