@@ -65,7 +65,7 @@ From there, you can:
 
 ## 📸 Screenshots
 
-Screenshots and demo video are stored in the `docs/` folder.
+Screenshots and demo video are stored in the [`docs`](../docs) folder.
 
 Example:
 ![Login Page](/docs/screenshorts/Login.html.png)  
@@ -79,6 +79,7 @@ Example:
 
 This is a closed MVP project.
 It is not open source and not licensed for commercial use.
+
 
 
 
