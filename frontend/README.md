@@ -77,10 +77,9 @@ Screenshots of the UI are stored in the `docs/` folder.
 
 Example:  
 ![Login Page](../docs/screenshorts/Login.html.png)  
-![Dashboard](../docs/dashboard.png)  
-![Notes Page](../docs/notes.png)  
-![Quiz Example](../docs/quiz.png)  
-![Settings Page](../docs/settings.png)  
+![Dashboard](../docs/screenshorts/Dashboard.html.png)  
+![Notes Page](../docs/screenshorts/Notes.html.png)  
+![Quiz Example](../docs/screenshorts/Quiz.html.png)  
 
 ---
 
@@ -88,6 +87,7 @@ Example:
 
 - MVP frontend is **static HTML/JS**.  
 - For scaling to mobile/web apps, this can later be migrated to **React** or **React Native**.  
+
 
 
 
